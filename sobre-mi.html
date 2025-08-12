@@ -15,166 +15,82 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<header class="bg-primary-dark text-white shadow-lg sticky top-0 z-50">
-    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-        <a href="index.html" class="logo-container">
-            <img src="images/logo-emmanuel-contreras.png" alt="Logo de Emmanuel Contreras - Arquitecto Digital"
-                class="logo-svg">
-            <div class="hidden md:block">
-                <div class="font-bold tracking-wider">EMMANUEL CONTRERAS</div>
-                <div class="text-xs font-light tracking-wider opacity-80">ARQUITECTO DIGITAL</div>
-            </div>
-        </a>
-        <div class="md:hidden">
-            <button id="menu-toggle" class="text-white focus:outline-none" aria-controls="mobile-menu"
-                aria-expanded="false">
-                <span class="sr-only">Abrir menú</span>
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
-                    </path>
-                </svg>
-            </button>
-        </div>
-        <nav class="hidden md:block">
-            <ul id="desktop-nav" class="flex items-center space-x-8">
-                <li><a href="proceso.html" class="nav-link">Proceso</a></li>
-                <li><a href="servicios.html" class="nav-link">Servicios</a></li>
-                <li><a href="caso-de-exito.html" class="nav-link">Casos de Éxito</a></li>
-                <li><a href="reseñas.html" class="nav-link">Reseñas</a></li>
-                <li><a href="sobre-mi.html" class="nav-link">Sobre Mí</a></li>
-                <li><a href="contacto.html" class="nav-link">Contacto</a></li>
-            </ul>
-        </nav>
-    </div>
-    <div id="mobile-menu" class="hidden md:hidden">
-        <nav class="px-6 pt-2 pb-4">
-            <ul class="flex flex-col space-y-4">
-                <li><a href="proceso.html" class="nav-link text-center block">Proceso</a></li>
-                <li><a href="servicios.html" class="nav-link text-center block">Servicios</a></li>
-                <li><a href="caso-de-exito.html" class="nav-link text-center block">Casos de Éxito</a></li>
-                <li><a href="reseñas.html" class="nav-link text-center block">Reseñas</a></li>
-                <li><a href="sobre-mi.html" class="nav-link text-center block">Sobre Mí</a></li>
-                <li><a href="contacto.html" class="nav-link text-center block">Contacto</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
+<body>
 
-<main>
-    <section class="page-section">
-        <div class="container">
-            <div class="about-hero">
-                <div class="about-hero__image-container">
-                    <img src="images/emmanuel-contreras.png" alt="Retrato de Emmanuel Contreras"
-                        class="about-hero__image">
-                </div>
-                <div class="about-hero__text">
-                    <h1 class="about-hero__title">Un Puente Entre Tu Visión y la Tecnología</h1>
-                    <p class="text-lg mt-4">Hola, soy Emmanuel Contreras. No soy solo un desarrollador; me considero un
-                        'Arquitecto Digital'. Mi pasión es escuchar tus metas de negocio y diseñar y construir la
-                        solución tecnológica exacta que necesitas para alcanzarlas.</p>
-                    <p class="text-lg mt-2">Creo que un gran sitio web es más que código y diseño: es un activo
-                        estratégico que trabaja para ti 24/7.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div id="header-placeholder"></div>
 
-    <section class="page-section bg-light-gray">
-        <div class="container text-center">
-            <h2 class="text-3xl font-bold text-gray-800 mb-4">Mi Filosofía de Trabajo</h2>
-            <p class="max-w-3xl mx-auto text-lg mb-12">Mi proceso se fundamenta en tres pilares que garantizan el éxito
-                de cada proyecto.</p>
-            <div class="philosophy-grid">
-                <div class="philosophy-card">
-                    <div class="philosophy-card__icon">
-                        <svg class="w-12 h-12 mx-auto" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h-1.5m1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 1.5m1-1.5l1 1.5m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6" />
-                        </svg>
+    <main>
+        <section class="page-section">
+            <div class="container">
+                <div class="about-hero">
+                    <div class="about-hero__image-container">
+                        <img src="images/emmanuel-contreras.png" alt="Retrato de Emmanuel Contreras"
+                            class="about-hero__image">
                     </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-2">1. Estrategia y Diseño UX</h3>
-                    <p>Analizo tu negocio y tus usuarios para crear un plano claro y una experiencia intuitiva que guíe
-                        a tus clientes hacia el objetivo.</p>
-                </div>
-                <div class="philosophy-card">
-                    <div class="philosophy-card__icon">
-                        <svg class="w-12 h-12 mx-auto" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
-                        </svg>
+                    <div class="about-hero__text">
+                        <h1 class="about-hero__title">Un Puente Entre Tu Visión y la Tecnología</h1>
+                        <p class="text-lg mt-4">Hola, soy Emmanuel Contreras. No soy solo un desarrollador; me considero
+                            un
+                            'Arquitecto Digital'. Mi pasión es escuchar tus metas de negocio y diseñar y construir la
+                            solución tecnológica exacta que necesitas para alcanzarlas.</p>
+                        <p class="text-lg mt-2">Creo que un gran sitio web es más que código y diseño: es un activo
+                            estratégico que trabaja para ti 24/7.</p>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-2">2. Desarrollo de Calidad</h3>
-                    <p>Construyo con código limpio, moderno y eficiente, creando plataformas robustas, rápidas y
-                        preparadas para crecer junto a tu negocio.</p>
-                </div>
-                <div class="philosophy-card">
-                    <div class="philosophy-card__icon">
-                        <svg class="w-12 h-12 mx-auto" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z" />
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-2">3. Fusión y Resultados</h3>
-                    <p>Mi valor real es conectar la estrategia con la ejecución técnica, entregando soluciones que no
-                        solo se ven bien, sino que generan resultados medibles.</p>
                 </div>
             </div>
-        </div>
-    </section>
-</main>
-<footer>
-    <section class="cta-final">
-        <div class="container">
-            <h2 class="cta-final__title">¿Tu negocio está listo para una transformación?</h2>
-            <p class="max-w-xl mx-auto mb-8">Descubre cómo una arquitectura digital estratégica
-                puede desbloquear el
-                verdadero potencial de tu negocio.</p>
-            <a href="contacto.html" class="button button--primary">Agenda tu Consulta
-                Estratégica</a>
-        </div>
-    </section>
-    <div class="bg-primary-dark text-white pt-16 pb-8">
-        <div class="container mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
-                <div class="flex flex-col items-center md:items-start">
-                    <a href="index.html" class="logo-container mb-4">
-                        <img src="images/logo-emmanuel-contreras.png" alt="Logo de Emmanuel Contreras"
-                            class="logo-svg footer-logo">
-                    </a>
-                    <p class="text-gray-400 max-w-xs">Construyendo puentes entre la estrategia de negocio y la
-                        ejecución digital.</p>
-                </div>
-                <div class="flex flex-col items-center md:items-start">
-                    <h3 class="text-xl font-bold mb-4">Navegación</h3>
-                    <a href="proceso.html" class="text-gray-400 hover:text-cyan-500 mb-2">Proceso</a>
-                    <a href="servicios.html" class="text-gray-400 hover:text-cyan-500 mb-2">Servicios</a>
-                    <a href="caso-de-exito.html" class="text-gray-400 hover:text-cyan-500 mb-2">Casos de
-                        Éxito</a>
-                    <a href="reseñas.html" class="text-gray-400 hover:text-cyan-500 mb-2">Reseñas</a>
-                    <a href="sobre-mi.html" class="text-gray-400 hover:text-cyan-500 mb-2">Sobre Mí</a>
-                </div>
-                <div class="flex flex-col items-center md:items-start">
-                    <h3 class="text-xl font-bold mb-4">Contacto</h3>
-                    <a href="mailto:contrerasemmanuel134@gmail.com"
-                        class="text-gray-400 hover:text-cyan-500 mb-4">contrerasemmanuel134@gmail.com</a>
+        </section>
+
+        <section class="page-section bg-light-gray">
+            <div class="container text-center">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Mi Filosofía de Trabajo</h2>
+                <p class="max-w-3xl mx-auto text-lg mb-12">Mi proceso se fundamenta en tres pilares que garantizan el
+                    éxito
+                    de cada proyecto.</p>
+                <div class="philosophy-grid">
+                    <div class="philosophy-card">
+                        <div class="philosophy-card__icon">
+                            <svg class="w-12 h-12 mx-auto" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h-1.5m1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 1.5m1-1.5l1 1.5m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">1. Estrategia y Diseño UX</h3>
+                        <p>Analizo tu negocio y tus usuarios para crear un plano claro y una experiencia intuitiva que
+                            guíe
+                            a tus clientes hacia el objetivo.</p>
+                    </div>
+                    <div class="philosophy-card">
+                        <div class="philosophy-card__icon">
+                            <svg class="w-12 h-12 mx-auto" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">2. Desarrollo de Calidad</h3>
+                        <p>Construyo con código limpio, moderno y eficiente, creando plataformas robustas, rápidas y
+                            preparadas para crecer junto a tu negocio.</p>
+                    </div>
+                    <div class="philosophy-card">
+                        <div class="philosophy-card__icon">
+                            <svg class="w-12 h-12 mx-auto" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">3. Fusión y Resultados</h3>
+                        <p>Mi valor real es conectar la estrategia con la ejecución técnica, entregando soluciones que
+                            no
+                            solo se ven bien, sino que generan resultados medibles.</p>
+                    </div>
                 </div>
             </div>
-            <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-500">
-                <p>&copy; 2025 Emmanuel Contreras. Todos los derechos reservados.</p>
-            </div>
-        </div>
-    </div>
-</footer>
-<script>
-    document.getElementById('menu-toggle').addEventListener('click', function () {
-        document.getElementById('mobile-menu').classList.toggle('hidden');
-    });
-</script>
+        </section>
+    </main>
+    <div id="footer-placeholder"></div>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
