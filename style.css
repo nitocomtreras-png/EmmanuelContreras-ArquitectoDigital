@@ -1,0 +1,650 @@
+/* Estilos Globales y de Marca */
+:root {
+    --primary-dark: #0A2540;
+    --accent-cyan: #00BFFF;
+    --light-gray: #F8F9FA;
+    --text-color: #343a40;
+    --white-color: #FFFFFF;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--white-color);
+    color: var(--text-color);
+}
+
+/* Estilos del Header y Navegación */
+.nav-link {
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-link:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--accent-cyan);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--accent-cyan);
+}
+
+.nav-link.active:after {
+    width: 100%;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    cursor: pointer;
+}
+
+.logo-svg {
+    width: 50px;
+    height: auto;
+}
+
+/* Estilos Generales de Página */
+.page-section {
+    padding: 5rem 1rem;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Estilos Hero */
+.hero-home {
+    background-color: var(--primary-dark);
+    color: var(--white-color);
+    padding: 8rem 2rem;
+    text-align: center;
+}
+
+.hero-home__title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.hero-interior {
+    background-color: var(--light-gray);
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+.hero-interior__title {
+    color: var(--primary-dark);
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+/* Caso de Éxito Hero */
+.case-study-hero {
+    position: relative;
+    padding: 8rem 2rem;
+    color: var(--white-color);
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.case-study-hero__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 37, 64, 0.75);
+}
+
+.case-study-hero__content {
+    position: relative;
+    z-index: 2;
+}
+
+.case-study-hero__title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+/* Botones */
+.button {
+    display: inline-block;
+    padding: 0.9rem 2rem;
+    border-radius: 999px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+}
+
+.button--primary {
+    background-color: var(--accent-cyan);
+    color: var(--primary-dark);
+}
+
+.button--primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0, 191, 255, 0.4);
+}
+
+.button--secondary {
+    background-color: transparent;
+    border: 2px solid var(--white-color);
+    color: var(--white-color);
+}
+
+.button--secondary:hover {
+    background-color: var(--white-color);
+    color: var(--primary-dark);
+}
+
+/* Layouts de Contenido */
+.item-step {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 5rem;
+}
+
+.item-step:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.item-step__graphic {
+    flex: 1;
+    background-color: var(--light-gray);
+    min-height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    padding: 2rem;
+}
+
+.item-step__graphic svg {
+    width: 100px;
+    height: 100px;
+    color: var(--primary-dark);
+}
+
+.item-step__title {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--primary-dark);
+}
+
+/* Estilos Página "Sobre Mí" */
+.about-hero {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.about-hero__image {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--light-gray);
+}
+
+.about-hero__title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--primary-dark);
+}
+
+/* Estilos Página "Contacto" */
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.contact-info__title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--primary-dark);
+}
+
+.contact-info__link {
+    font-weight: 600;
+    color: var(--accent-cyan);
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s;
+}
+
+.contact-info__link:hover {
+    border-bottom-color: var(--accent-cyan);
+}
+
+.contact-form {
+    background-color: var(--white-color);
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+
+.form-input {
+    width: 100%;
+    padding: 0.8rem 0.5rem;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    background-color: transparent;
+    font-size: 1rem;
+    position: relative;
+    z-index: 1;
+    transition: border-color 0.3s;
+}
+
+.form-label {
+    position: absolute;
+    top: 0.8rem;
+    left: 0.5rem;
+    color: #999;
+    transition: all 0.3s ease;
+    z-index: 0;
+}
+
+.form-input:focus+.form-label,
+.form-input:not(:placeholder-shown)+.form-label {
+    top: -1.2rem;
+    font-size: 0.8rem;
+    color: var(--accent-cyan);
+}
+
+.form-input:focus {
+    outline: none;
+    border-bottom-color: var(--accent-cyan);
+}
+
+/* Estilos Página "Caso de Éxito" */
+.key-results__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.key-results__card {
+    background: var(--white-color);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.key-results__metric {
+    display: block;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--accent-cyan);
+    margin-bottom: 0.5rem;
+}
+
+.project-narrative {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    gap: 4rem;
+}
+
+.project-narrative__main h2 {
+    color: var(--primary-dark);
+    font-size: 2rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.testimonial-block {
+    margin: 2.5rem 0;
+    padding: 2rem;
+    background-color: var(--light-gray);
+    border-left: 5px solid var(--accent-cyan);
+    border-radius: 4px;
+}
+
+.testimonial-block p {
+    font-size: 1.2rem;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+.testimonial-block cite {
+    display: block;
+    margin-top: 1rem;
+    font-weight: 600;
+    color: var(--primary-dark);
+    font-style: normal;
+}
+
+.project-narrative__sidebar {
+    position: sticky;
+    top: 120px;
+}
+
+.tech-card {
+    background: var(--white-color);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.tech-card__title {
+    color: var(--primary-dark);
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.tech-card__list a {
+    text-decoration: underline;
+    color: var(--accent-cyan);
+}
+
+/* CTA Final */
+.cta-final {
+    background-color: var(--primary-dark);
+    color: var(--white-color);
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+.cta-final__title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+/* Diseño Adaptable */
+@media (max-width: 992px) {
+    .project-narrative {
+        grid-template-columns: 1fr;
+    }
+
+    .project-narrative__sidebar {
+        position: static;
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .hero-home__title,
+    .about-hero__title,
+    .contact-info__title,
+    .case-study-hero__title {
+        font-size: 2.5rem;
+    }
+
+    .hero-interior__title {
+        font-size: 2rem;
+    }
+
+    .item-step,
+    .item-step:nth-child(even),
+    .about-hero,
+    .contact-layout {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+        grid-template-columns: 1fr;
+    }
+
+    .item-step__graphic {
+        width: 100%;
+        min-height: 250px;
+    }
+
+    .about-hero__image-container {
+        flex: 0 0 200px;
+        width: 200px;
+    }
+}
+
+/* --- ESTILOS PARA CTA DE ESTRATEGIA --- */
+.cta-strategy {
+    background-color: var(--primary-dark);
+    color: var(--white-color);
+    padding: 5rem 2rem;
+}
+
+.cta-strategy__title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.cta-strategy__subtitle {
+    max-width: 700px;
+    margin: 0 auto 2rem auto;
+    opacity: 0.9;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+/* --- ESTILOS PARA PÁGINA DE RESEÑA ÚNICA --- */
+.single-testimonial-container {
+    max-width: 750px;
+    margin: 0 auto;
+    /* Centra el contenedor del testimonio */
+}
+
+/* --- ESTILOS MEJORADOS PÁGINA "SOBRE MÍ" --- */
+.about-hero {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.about-hero__image-container {
+    flex: 0 0 250px;
+    /* Ancho fijo para la imagen */
+    width: 250px;
+}
+
+.about-hero__image {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    /* Hace la imagen perfectamente redonda */
+    object-fit: cover;
+    border: 5px solid var(--light-gray);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.about-hero__text {
+    flex: 1;
+    /* Ocupa el resto del espacio */
+}
+
+.about-hero__title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--primary-dark);
+}
+
+.philosophy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.philosophy-card {
+    background: var(--white-color);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.philosophy-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.philosophy-card__icon {
+    margin-bottom: 1rem;
+    color: var(--accent-cyan);
+}
+
+/* --- ESTILOS PARA LA PÁGINA DE PORTAFOLIO/CASOS DE ÉXITO --- */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2.5rem;
+}
+
+.portfolio-card {
+    background: var(--white-color);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio-card__image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.portfolio-card__content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    /* Hace que el contenido ocupe el espacio */
+}
+
+.portfolio-card__tag {
+    display: inline-block;
+    background-color: var(--accent-cyan);
+    color: var(--primary-dark);
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    align-self: flex-start;
+    /* Alinea la etiqueta a la izquierda */
+}
+
+.portfolio-card__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-dark);
+    margin-bottom: 0.5rem;
+}
+
+.portfolio-card__description {
+    color: var(--text-color);
+    line-height: 1.6;
+    flex-grow: 1;
+    /* Empuja el botón hacia abajo */
+    margin-bottom: 1.5rem;
+}
+
+/* --- ESTILOS PÁGINA DE ESTRATEGIA --- */
+.strategy-section {
+    margin-bottom: 4rem;
+    padding-bottom: 4rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.strategy-section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.strategy-section__title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--primary-dark);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.strategy-section__description {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 2.5rem auto;
+    color: var(--text-color);
+}
+
+.persona-card {
+    background: var(--white-color);
+    border-radius: 8px;
+    padding: 2rem;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.persona-card__name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-dark);
+    margin-bottom: 1rem;
+}
+
+.persona-card__details {
+    list-style-position: inside;
+}
+
+.pillar-card,
+.calendar-day {
+    background: var(--white-color);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+    border-top: 4px solid var(--accent-cyan);
+}
+
+.pillar-card__title,
+.calendar-day__title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--primary-dark);
+    margin-bottom: 0.5rem;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}

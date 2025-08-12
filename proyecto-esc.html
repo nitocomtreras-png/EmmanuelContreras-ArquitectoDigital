@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plano Estratégico: Marketing de Contenidos - Emmanuel Contreras</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="bg-primary-dark text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="logo-container">
+                <img src="images/logo-emmanuel-contreras.png" alt="Logo de Emmanuel Contreras - Arquitecto Digital"
+                    class="logo-svg">
+                <div class="hidden md:block">
+                    <div class="font-bold tracking-wider">EMMANUEL CONTRERAS</div>
+                    <div class="text-xs font-light tracking-wider opacity-80">ARQUITECTO DIGITAL</div>
+                </div>
+            </a>
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-white focus:outline-none" aria-controls="mobile-menu"
+                    aria-expanded="false">
+                    <span class="sr-only">Abrir menú</span> <svg class="w-6 h-6" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+            <nav class="hidden md:block">
+                <ul id="desktop-nav" class="flex items-center space-x-8">
+                    <li><a href="proceso.html" class="nav-link">Proceso</a></li>
+                    <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+                    <li><a href="caso-de-exito.html" class="nav-link">Casos de Éxito</a></li>
+                    <li><a href="reseñas.html" class="nav-link">Reseñas</a></li>
+                    <li><a href="sobre-mi.html" class="nav-link">Sobre Mí</a></li>
+                    <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden">
+            <nav class="px-6 pt-2 pb-4">
+                <ul class="flex flex-col space-y-4">
+                    <li><a href="proceso.html" class="nav-link text-center block">Proceso</a></li>
+                    <li><a href="servicios.html" class="nav-link text-center block">Servicios</a></li>
+                    <li><a href="caso-de-exito.html" class="nav-link text-center block">Casos de Éxito</a></li>
+                    <li><a href="reseñas.html" class="nav-link text-center block">Reseñas</a></li>
+                    <li><a href="sobre-mi.html" class="nav-link text-center block">Sobre Mí</a></li>
+                    <li><a href="contacto.html" class="nav-link text-center block">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero-interior hero-interior--with-image">
+            <img src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?q=80&w=2070&auto=format&fit=crop"
+                alt="Granos de café de alta calidad" class="hero-interior__image">
+            <div class="hero-interior__text">
+                <h1 class="hero-interior__title">Plano Estratégico de Marketing</h1>
+                <p class="text-lg max-w-3xl mx-auto mt-4">Una demostración de cómo la estrategia de contenidos impulsa
+                    el crecimiento de un e-commerce. Este es un ejemplo del tipo de planificación que realizo para mis
+                    clientes.</p>
+            </div>
+        </section>
+
+        <section class="page-section">
+            <div class="container">
+                <div class="strategy-section">
+                    <h2 class="strategy-section__title">1. Arquetipo de Cliente (Buyer Persona)</h2>
+                    <p class="strategy-section__description">Todo empieza por entender a quién le hablamos. Para 'Café
+                        Origen Celestial', definimos a nuestro cliente principal como "Ana, la Entusiasta del Café".</p>
+                    <div class="persona-card">
+                        <h3 class="persona-card__name">Ana, la Entusiasta del Café (32)</h3>
+                        <ul class="persona-card__details">
+                            <li><strong>Motivaciones:</strong> Busca calidad y autenticidad. Valora la historia detrás
+                                del producto.</li>
+                            <li><strong>Frustraciones:</strong> Decepcionada con el café comercial. No sabe en qué
+                                marcas confiar.</li>
+                            <li><strong>Objetivos:</strong> Disfrutar de un café excepcional en casa y aprender más
+                                sobre sus orígenes.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="strategy-section">
+                    <h2 class="strategy-section__title">2. Pilares de Contenido</h2>
+                    <p class="strategy-section__description">El contenido debe educar, entretener y convertir. Definimos
+                        tres pilares para conectar con Ana:</p>
+                    <div class="grid md:grid-cols-3 gap-8 text-center">
+                        <div class="pillar-card">
+                            <h3 class="pillar-card__title">Educación</h3>
+                            <p>Tutoriales de métodos de preparación, guías de cata, diferencias entre granos.</p>
+                        </div>
+                        <div class="pillar-card">
+                            <h3 class="pillar-card__title">Cultura</h3>
+                            <p>Historias de los caficultores, viajes a las fincas, la cultura del café en el mundo.</p>
+                        </div>
+                        <div class="pillar-card">
+                            <h3 class="pillar-card__title">Producto</h3>
+                            <p>Lanzamientos de nuevos orígenes, promociones, beneficios del modelo de suscripción.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="strategy-section">
+                    <h2 class="strategy-section__title">3. Calendario Editorial (Ejemplo de una Semana)</h2>
+                    <p class="strategy-section__description">La consistencia es clave. Este es un ejemplo de cómo se
+                        vería una semana de contenido en redes sociales (Instagram).</p>
+                    <div class="calendar-grid">
+                        <div class="calendar-day"><span class="calendar-day__title">Lunes</span>
+                            <p>Post: "El arte del Chemex". Video tutorial.</p>
+                        </div>
+                        <div class="calendar-day"><span class="calendar-day__title">Martes</span>
+                            <p>Story: Sesión de preguntas y respuestas con nuestro barista.</p>
+                        </div>
+                        <div class="calendar-day"><span class="calendar-day__title">Miércoles</span>
+                            <p>Post: "Conoce a nuestro productor de Chiapas". Carrusel con fotos.</p>
+                        </div>
+                        <div class="calendar-day"><span class="calendar-day__title">Jueves</span>
+                            <p>Reel: "3 errores que cometes al hacer café".</p>
+                        </div>
+                        <div class="calendar-day"><span class="calendar-day__title">Viernes</span>
+                            <p>Post: "¡Nuevo Origen: Geisha de Veracruz ya disponible!". Foto del producto.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-primary-dark text-white pt-16 pb-8">
+        <section class="cta-final">
+            <div class="container">
+                <h2 class="cta-final__title">¿Tu negocio está listo para una transformación?</h2>
+                <p class="max-w-xl mx-auto mb-8">Descubre cómo una arquitectura digital estratégica puede desbloquear el
+                    verdadero potencial de tu negocio.</p>
+                <a href="contacto.html" class="button button--primary">Agenda tu Consulta Estratégica</a>
+            </div>
+        </section>
+        <div class="bg-primary-dark text-white pt-16 pb-8">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+                    <div class="flex flex-col items-center md:items-start">
+                        <a href="index.html" class="logo-container mb-4">
+                            <img src="images/logo-emmanuel-contreras.png" alt="Logo de Emmanuel Contreras"
+                                class="logo-svg footer-logo">
+                        </a>
+                        <p class="text-gray-400 max-w-xs">Construyendo puentes entre la estrategia de negocio y la
+                            ejecución digital.</p>
+                    </div>
+                    <div class="flex flex-col items-center md:items-start">
+                        <h3 class="text-xl font-bold mb-4">Navegación</h3>
+                        <a href="proceso.html" class="text-gray-400 hover:text-cyan-500 mb-2">Proceso</a>
+                        <a href="servicios.html" class="text-gray-400 hover:text-cyan-500 mb-2">Servicios</a>
+                        <a href="casos-de-exito.html" class="text-gray-400 hover:text-cyan-500 mb-2">Casos de Éxito</a>
+                        <a href="reseñas.html" class="text-gray-400 hover:text-cyan-500 mb-2">Reseñas</a>
+                        <a href="sobre-mi.html" class="text-gray-400 hover:text-cyan-500 mb-2">Sobre Mí</a>
+                    </div>
+                    <div class="flex flex-col items-center md:items-start">
+                        <h3 class="text-xl font-bold mb-4">Contacto</h3>
+                        <a href="mailto:contrerasemmanuel134@gmail.com"
+                            class="text-gray-400 hover:text-cyan-500 mb-4">contrerasemmanuel134@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-500">
+                    <p>&copy; 2025 Emmanuel Contreras. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (menuToggle && mobileMenu) {
+            menuToggle.addEventListener('click', function () {
+                // Alterna la visibilidad del menú
+                mobileMenu.classList.toggle('hidden');
+
+                // Actualiza el atributo ARIA para accesibilidad
+                const isExpanded = !mobileMenu.classList.contains('hidden');
+                menuToggle.setAttribute('aria-expanded', isExpanded);
+            });
+        }
+
+        // Lógica para marcar el enlace activo en la navegación
+        document.addEventListener('DOMContentLoaded', () => {
+            const currentPath = window.location.pathname.split('/').pop();
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            navLinks.forEach(link => {
+                const linkPath = link.getAttribute('href').split('/').pop();
+                if (linkPath === currentPath) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
