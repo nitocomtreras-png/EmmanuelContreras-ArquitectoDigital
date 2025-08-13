@@ -648,3 +648,23 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1.5rem;
 }
+
+/* Estilo para destacar el botón "Hablemos" en la navegación */
+.navbar .btn-cta a {
+    background-color: #f5a623;
+    color: #fff !important;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar .btn-cta a:hover {
+    background-color: #e0951c;
+    color: #fff !important;
+}
+
+/* Estilo para el enlace de navegación activo */
+.navbar-nav .nav-link.active {
+    color: #f5a623 !important;
+    font-weight: bold;
+}
