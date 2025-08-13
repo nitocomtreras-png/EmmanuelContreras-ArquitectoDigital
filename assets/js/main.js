@@ -12,8 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
             .catch(error => console.error(`Error al cargar ${url}:`, error));
     };
 
-    loadComponent('header-placeholder', 'EmmanuelContreras-ArquitectoDigital/_includes/header.html');
-    loadComponent('footer-placeholder', 'EmmanuelContreras-ArquitectoDigital/_includes/footer.html');
+    loadComponent('header-placeholder', '/EmmanuelContreras-ArquitectoDigital/_includes/header.html');
+    loadComponent('footer-placeholder', '/EmmanuelContreras-ArquitectoDigital/_includes/footer.html');
 });
 
 const initializeNavigation = () => {
@@ -40,4 +40,5 @@ const initializeNavigation = () => {
         }
     });
 };
+
 
