@@ -34,11 +34,16 @@ const initializeNavigation = () => {
     const navLinks = document.querySelectorAll('.nav-link');
 
     navLinks.forEach(link => {
-        const linkPath = link.getAttribute('href').split('/').pop();
-        if (linkPath === currentPath) {
-            link.classList.add('active');
+        // Asegúrate de que el enlace no esté vacío antes de procesar
+        const linkHref = link.getAttribute('href');
+        if (linkHref) {
+            const linkPath = linkHref.split('/').pop();
+            if (linkPath === currentPath) {
+                link.classList.add('active');
+            }
         }
     });
 };
+
 
 
