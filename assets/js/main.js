@@ -1,10 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
     const loadComponent = (id, url) => {
         fetch(url)
-            .then(response => response.text())
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`Error en la red: ${response.statusText}`);
+                }
+                return response.text();
+            })
             .then(data => {
                 document.getElementById(id).innerHTML = data;
-                // Volver a ejecutar la lógica de la navegación después de cargar el header
                 if (id === 'header-placeholder') {
                     initializeNavigation();
                 }
@@ -17,7 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 const initializeNavigation = () => {
-    // Lógica del menú móvil
     const menuToggle = document.getElementById('menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
 
@@ -29,12 +32,10 @@ const initializeNavigation = () => {
         });
     }
 
-    // Lógica para marcar el enlace activo
-    const currentPath = window.location.pathname.split('/').pop() || 'index.html'; // Asegura que 'index.html' sea el default
+    const currentPath = window.location.pathname.split('/').pop() || 'index.html';
     const navLinks = document.querySelectorAll('.nav-link');
 
     navLinks.forEach(link => {
-        // Asegúrate de que el enlace no esté vacío antes de procesar
         const linkHref = link.getAttribute('href');
         if (linkHref) {
             const linkPath = linkHref.split('/').pop();
@@ -44,6 +45,3 @@ const initializeNavigation = () => {
         }
     });
 };
-
-
-
