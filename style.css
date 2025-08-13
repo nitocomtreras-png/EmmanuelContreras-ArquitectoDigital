@@ -667,4 +667,9 @@ body {
 .navbar-nav .nav-link.active {
     color: #f5a623 !important;
     font-weight: bold;
+
+}
+/* Ajuste para el header fijo */
+main {
+    padding-top: 88px; /* Ajusta este valor si la altura del header cambia */
 }
