@@ -10,6 +10,7 @@ const proyectos = [
     url_repo: 'https://github.com/nitocomtreras-png/studios-alma-nails',
     imagen: 'images/alma-nails-pagespeed.webp', // ¡Ya optimizada y en tu proyecto! 
     tipo: 'Cliente Real'
+    estado: 'Completado'
   },
   {
     id: 'conceptual-01',
@@ -20,6 +21,7 @@ const proyectos = [
     url_repo: '', // Puedes dejarlo vacío si no hay repositorio
     imagen: 'https://images.unsplash.com/photo-1559925393-8be0ec4767c8?q=80&w=2070&auto=format&fit=crop',
     tipo: 'Proyecto Conceptual'
+    estado: 'Completado'
   }
   // --- AÑADE TUS FUTUROS PROYECTOS AQUÍ ---
   // {
