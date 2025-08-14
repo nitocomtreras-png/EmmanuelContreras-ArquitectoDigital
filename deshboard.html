@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Dashboard de Proyectos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/EmmanuelContreras-ArquitectoDigital/style.css">
+    <style>
+        /* Estilos específicos y utilitarios para el dashboard */
+        :root { --dark-blue: #0A2540; --cyan-accent: #00BFFF; }
+        .dashboard-table { width: 100%; border-collapse: collapse; }
+        .dashboard-table th, .dashboard-table td { padding: 12px 15px; border: 1px solid #ddd; text-align: left; }
+        .dashboard-table th { background-color: var(--dark-blue); color: white; }
+        .dashboard-table tbody tr:nth-of-type(even) { background-color: #f3f3f3; }
+        .status-tag { padding: 4px 8px; border-radius: 12px; font-size: 0.8rem; font-weight: 600; color: white; }
+        .status--en-desarrollo { background-color: #3B82F6; } /* Azul */
+        .status--completado { background-color: #10B981; } /* Verde */
+        .status--pausado { background-color: #F59E0B; } /* Naranja */
+        .status--propuesta { background-color: #6B7280; } /* Gris */
+        .tech-tag { background-color: #E5E7EB; color: #374151; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; }
+    </style>
+</head>
+<body>
+    <main class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-gray-800 mb-6">Dashboard de Gestión de Proyectos</h1>
+        <div style="overflow-x:auto;">
+            <table class="dashboard-table">
+                <thead>
+                    <tr>
+                        <th>Proyecto</th>
+                        <th>Estado</th>
+                        <th>Tecnologías</th>
+                        <th>Enlaces</th>
+                    </tr>
+                </thead>
+                <tbody id="dashboard-body">
+                    </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="/EmmanuelContreras-ArquitectoDigital/data/proyectos.js"></script>
+    <script src="/EmmanuelContreras-ArquitectoDigital/assets/js/app-dashboard.js"></script>
+</body>
+</html>
