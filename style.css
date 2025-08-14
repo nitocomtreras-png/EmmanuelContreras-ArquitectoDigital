@@ -673,3 +673,32 @@ body {
 main {
     padding-top: 88px; /* Ajusta este valor si la altura del header cambia */
 }
+/* --- ESTILOS ADICIONALES PARA TARJETAS DE PROYECTO --- */
+
+.portfolio-card__tecnologias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.portfolio-card__tecnologias .tag {
+    background-color: var(--light-gray);
+    color: var(--primary-dark);
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+/* Modificador para el botón secundario en tarjetas de proyecto */
+.portfolio-card .button--secondary {
+    background-color: transparent;
+    border: 2px solid var(--primary-dark);
+    color: var(--primary-dark);
+    padding: calc(0.9rem - 2px) calc(2rem - 2px); /* Ajuste por el borde */
+}
+
+.portfolio-card .button--secondary:hover {
+    background-color: var(--primary-dark);
+    color: var(--white-color);
+}
