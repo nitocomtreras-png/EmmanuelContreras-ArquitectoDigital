@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nitocomtreras-png.github.io/EmmanuelContreras-ArquitectoDigital/sitemap.xml
