@@ -669,10 +669,13 @@ body {
     font-weight: bold;
 
 }
+
 /* Ajuste para el header fijo */
 main {
-    padding-top: 88px; /* Ajusta este valor si la altura del header cambia */
+    padding-top: 88px;
+    /* Ajusta este valor si la altura del header cambia */
 }
+
 /* --- ESTILOS ADICIONALES PARA TARJETAS DE PROYECTO --- */
 
 .portfolio-card__tecnologias {
@@ -695,10 +698,74 @@ main {
     background-color: transparent;
     border: 2px solid var(--primary-dark);
     color: var(--primary-dark);
-    padding: calc(0.9rem - 2px) calc(2rem - 2px); /* Ajuste por el borde */
+    padding: calc(0.9rem - 2px) calc(2rem - 2px);
+    /* Ajuste por el borde */
 }
 
 .portfolio-card .button--secondary:hover {
     background-color: var(--primary-dark);
     color: var(--white-color);
+}
+
+/* Estilos específicos y utilitarios para el dashboard */
+:root {
+    --dark-blue: #0A2540;
+    --cyan-accent: #00BFFF;
+}
+
+.dashboard-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.dashboard-table th,
+.dashboard-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.dashboard-table th {
+    background-color: var(--dark-blue);
+    color: white;
+}
+
+.dashboard-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.status-tag {
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: white;
+}
+
+.status--en-desarrollo {
+    background-color: #3B82F6;
+}
+
+/* Azul */
+.status--completado {
+    background-color: #10B981;
+}
+
+/* Verde */
+.status--pausado {
+    background-color: #F59E0B;
+}
+
+/* Naranja */
+.status--propuesta {
+    background-color: #6B7280;
+}
+
+/* Gris */
+.tech-tag {
+    background-color: #E5E7EB;
+    color: #374151;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.75rem;
 }
