@@ -769,3 +769,27 @@ main {
     border-radius: 4px;
     font-size: 0.75rem;
 }
+
+/* --- ESTILOS PARA EL MODAL DEL DASHBOARD --- */
+.modal-container {
+    max-height: 90vh;
+    /* El modal nunca será más alto que el 90% de la pantalla */
+}
+
+/* --- AJUSTES DE ACCESIBILIDAD (CONTRASTE DE COLOR) --- */
+
+/* Sobrescribimos las clases de utilidad de Tailwind para los textos
+  grises, asignándoles un tono más oscuro para garantizar un 
+  contraste adecuado sobre fondos blancos y claros.
+*/
+
+.text-gray-400,
+.text-gray-500 {
+    color: #495057;
+    /* Un gris más oscuro y legible */
+}
+
+.text-gray-600 {
+    color: #343a40;
+    /* Usamos el color de texto principal para un contraste aún mayor */
+}

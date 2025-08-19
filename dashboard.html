@@ -10,8 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/EmmanuelContreras-ArquitectoDigital/style.css">
-
+    <link rel="stylesheet" href="/style.css">
 </head>
 
 <body>
@@ -39,48 +38,53 @@
 
         <div id="project-modal"
             class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4">
-            <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-2xl">
-                <h2 id="modal-title" class="text-2xl font-bold mb-6">Añadir Nuevo Proyecto</h2>
-                <form id="project-form">
-                    <input type="hidden" id="project-id">
-
-                    <div class="form-group"><input type="text" id="nombre" class="form-input" placeholder=" "
-                            required><label for="nombre" class="form-label">Nombre del Proyecto</label></div>
-                    <div class="form-group"><textarea id="descripcion" class="form-input" placeholder=" " rows="3"
-                            required></textarea><label for="descripcion" class="form-label">Descripción</label></div>
-                    <div class="form-group"><input type="text" id="tecnologias" class="form-input" placeholder=" "
-                            required><label for="tecnologias" class="form-label">Tecnologías (separadas por
-                            coma)</label></div>
-                    <div class="grid grid-cols-2 gap-4">
-                        <div class="form-group"><input type="url" id="url_live" class="form-input"
-                                placeholder=" "><label for="url_live" class="form-label">URL del Proyecto</label></div>
-                        <div class="form-group"><input type="url" id="url_repo" class="form-input"
-                                placeholder=" "><label for="url_repo" class="form-label">URL del Repositorio</label>
+            <div class="bg-white rounded-lg shadow-lg w-full max-w-2xl flex flex-col modal-container">
+                <div class="p-6 border-b">
+                    <h2 id="modal-title" class="text-2xl font-bold">Añadir Nuevo Proyecto</h2>
+                </div>
+                <div class="p-6 overflow-y-auto">
+                    <form id="project-form">
+                        <input type="hidden" id="project-id">
+                        <div class="form-group"><input type="text" id="nombre" class="form-input" placeholder=" "
+                                required><label for="nombre" class="form-label">Nombre del Proyecto</label></div>
+                        <div class="form-group"><textarea id="descripcion" class="form-input" placeholder=" " rows="3"
+                                required></textarea><label for="descripcion" class="form-label">Descripción</label>
                         </div>
-                        <div class="form-group"><input type="text" id="imagen" class="form-input" placeholder=" "><label
-                                for="imagen" class="form-label">Ruta de la Imagen</label></div>
-                        <div class="form-group">
-                            <select id="estado" class="form-input" required>
-                                <option value="Completado">Completado</option>
-                                <option value="En Desarrollo">En Desarrollo</option>
-                                <option value="Pausado">Pausado</option>
-                                <option value="Propuesta">Propuesta</option>
-                            </select>
-                            <label for="estado" class="form-label">Estado</label>
+                        <div class="form-group"><input type="text" id="tecnologias" class="form-input" placeholder=" "
+                                required><label for="tecnologias" class="form-label">Tecnologías (separadas por
+                                coma)</label></div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="form-group"><input type="url" id="url_live" class="form-input"
+                                    placeholder=" "><label for="url_live" class="form-label">URL del Proyecto</label>
+                            </div>
+                            <div class="form-group"><input type="url" id="url_repo" class="form-input"
+                                    placeholder=" "><label for="url_repo" class="form-label">URL del Repositorio</label>
+                            </div>
+                            <div class="form-group"><input type="text" id="imagen" class="form-input"
+                                    placeholder=" "><label for="imagen" class="form-label">Ruta de la Imagen</label>
+                            </div>
+                            <div class="form-group">
+                                <select id="estado" class="form-input" required>
+                                    <option value="Completado">Completado</option>
+                                    <option value="En Desarrollo">En Desarrollo</option>
+                                    <option value="Pausado">Pausado</option>
+                                    <option value="Propuesta">Propuesta</option>
+                                </select>
+                                <label for="estado" class="form-label">Estado</label>
+                            </div>
                         </div>
-                    </div>
-                    <div class="flex justify-end gap-4 mt-6">
-                        <button type="button" id="cancel-btn" class="button button--secondary">Cancelar</button>
-                        <button type="submit" class="button button--primary">Guardar Proyecto</button>
-                    </div>
-                </form>
+                    </form>
+                </div>
+                <div class="flex justify-end gap-4 p-6 border-t bg-gray-50">
+                    <button type="button" id="cancel-btn" class="button button--secondary">Cancelar</button>
+                    <button type="submit" form="project-form" class="button button--primary">Guardar Proyecto</button>
+                </div>
             </div>
         </div>
     </main>
 
     <script type="module">
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
         const firebaseConfig = {
             apiKey: "AIzaSyC_3qYKEMcU9mxeUyqX0xxQ_YTKCPypxHc",
             authDomain: "arquitecto-digital.firebaseapp.com",
@@ -92,10 +96,8 @@
         };
         const app = initializeApp(firebaseConfig);
     </script>
-
-    <script type="module" src="/EmmanuelContreras-ArquitectoDigital/assets/js/admin-auth.js"></script>
-    <script type="module" src="/EmmanuelContreras-ArquitectoDigital/assets/js/app-dashboard-firestore.js"></script>
-
+    <script type="module" src="/assets/js/admin-auth.js"></script>
+    <script type="module" src="/assets/js/app-dashboard-firestore.js"></script>
 </body>
 
 </html>

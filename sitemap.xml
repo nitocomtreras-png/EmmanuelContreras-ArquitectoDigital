@@ -1,77 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
   <url>
-    <loc>https://nitocomtreras-png.github.io/EmmanuelContreras-ArquitectoDigital/</loc>
-    <lastmod>2025-08-15</lastmod>
+    <loc>https://arquitecto-digital.web.app/</loc>
+    <lastmod>2025-08-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://nitocomtreras-png.github.io/EmmanuelContreras-ArquitectoDigital/proceso.html</loc>
-    <lastmod>2025-08-15</lastmod>
+    <loc>https://arquitecto-digital.web.app/proceso.html</loc>
+    <lastmod>2025-08-18</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://nitocomtreras-png.github.io/EmmanuelContreras-ArquitectoDigital/servicios.html</loc>
-    <lastmod>2025-08-15</lastmod>
+    <loc>https://arquitecto-digital.web.app/servicios.html</loc>
+    <lastmod>2025-08-18</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://nitocomtreras-png.github.io/EmmanuelContreras-ArquitectoDigital/caso-de-exito.html</loc>
-    <lastmod>2025-08-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-    <url>
-    <loc>https://nitocomtreras-png.github.io/EmmanuelContreras-ArquitectoDigital/proyectos.html</loc>
-    <lastmod>2025-08-15</lastmod>
+    <loc>https://arquitecto-digital.web.app/caso-de-exito.html</loc>
+    <lastmod>2025-08-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://nitocomtreras-png.github.io/EmmanuelContreras-ArquitectoDigital/blog.html</loc>
-    <lastmod>2025-08-15</lastmod>
+    <loc>https://arquitecto-digital.web.app/blog.html</loc>
+    <lastmod>2025-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nitocomtreras-png.github.io/EmmanuelContreras-ArquitectoDigital/sobre-mi.html</loc>
-    <lastmod>2025-08-15</lastmod>
+    <loc>https://arquitecto-digital.web.app/sobre-mi.html</loc>
+    <lastmod>2025-08-18</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nitocomtreras-png.github.io/EmmanuelContreras-ArquitectoDigital/contacto.html</loc>
-    <lastmod>2025-08-15</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-  </url>
-    <url>
-    <loc>https://nitocomtreras-png.github.io/EmmanuelContreras-ArquitectoDigital/reseñas.html</loc>
-    <lastmod>2025-08-15</lastmod>
+    <loc>https://arquitecto-digital.web.app/contacto.html</loc>
+    <lastmod>2025-08-18</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://nitocomtreras-png.github.io/EmmanuelContreras-ArquitectoDigital/blog/trampa-web-economica.html</loc>
-    <lastmod>2025-08-13</lastmod>
+    <loc>https://arquitecto-digital.web.app/reseñas.html</loc>
+    <lastmod>2025-08-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://arquitecto-digital.web.app/blog/trampa-web-economica.html</loc>
+    <lastmod>2025-08-18</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
-    <url>
-    <loc>https://nitocomtreras-png.github.io/EmmanuelContreras-ArquitectoDigital/blog/5-pilares-web-de-negocio.html</loc>
-    <lastmod>2025-08-14</lastmod>
+  <url>
+    <loc>https://arquitecto-digital.web.app/blog/5-pilares-web-de-negocio.html</loc>
+    <lastmod>2025-08-18</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
-   <url>
-    <loc>https://nitocomtreras-png.github.io/EmmanuelContreras-ArquitectoDigital/proyecto-esc.html</loc>
-    <lastmod>2025-08-15</lastmod>
-    <changefreq>never</changefreq>
-    <priority>0.5</priority>
-  </url>
-
 </urlset>
