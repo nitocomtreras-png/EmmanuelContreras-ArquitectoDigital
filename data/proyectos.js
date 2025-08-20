@@ -3,8 +3,8 @@
 const proyectos = [
   {
     id: 'caso-exito-01',
-    nombre: 'Alma Nails Studio',
-    descripcion: 'Migración y reconstrucción de un sitio web para un negocio local, con un enfoque extremo en el rendimiento, la accesibilidad y el SEO técnico para dominar las búsquedas locales.',
+    nombre: ' Alma Nails Studio',
+    descripcion: 'Migración y reconstrucción de un sitio web para un negocio local, con un enfoque extremo en el rendimiento, la accesibilidad y el SEO técnico para dominar las búsquedas locales.>',
     tecnologias: ['HTML5', 'CSS3', 'JavaScript', 'SEO Técnico'],
     url_live: 'https://nitocomtreras-png.github.io/studios-alma-nails/',
     url_repo: 'https://github.com/nitocomtreras-png/studios-alma-nails',
