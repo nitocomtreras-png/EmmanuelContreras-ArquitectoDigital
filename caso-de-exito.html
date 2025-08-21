@@ -47,6 +47,19 @@
 
     <div id="footer-placeholder"></div>
     <script type="module" src="/assets/js/main.js"></script>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+        const firebaseConfig = {
+            apiKey: "AIzaSyC_3qYKEMcU9mxeUyqX0xxQ_YTKCPypxHc",
+            authDomain: "arquitecto-digital.firebaseapp.com",
+            projectId: "arquitecto-digital",
+            storageBucket: "arquitecto-digital.firebasestorage.app",
+            messagingSenderId: "751037572723",
+            appId: "1:751037572723:web:43cb5487f586a84e25ac06",
+            measurementId: "G-BHNFB20WZ4"
+        };
+        const app = initializeApp(firebaseConfig);
+    </script>
     <script type="module" src="/assets/js/app-proyectos-publicos.js"></script>
 </body>
 

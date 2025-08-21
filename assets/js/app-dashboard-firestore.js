@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Renderiza todos los componentes con los datos frescos
             renderizarTabla(todosLosProyectos);
             actualizarEstadisticas(todosLosProyectos);
-            inicializarCalendario(todosLosProyectos);
+            //inicializarCalendario(todosLosProyectos);
 
         } catch (error) {
             console.error("Error al obtener los proyectos:", error);
