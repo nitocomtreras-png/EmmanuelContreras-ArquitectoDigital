@@ -1,20 +1,25 @@
 rules_version = '2';
+
 service cloud.firestore {
+  // Todas las reglas deben estar dentro de este bloque principal
   match /databases/{database}/documents {
 
-    // Regla para la colección de proyectos
+    // REGLA 1: Para la colección "proyectos"
     match /proyectos/{proyectoId} {
-      // CUALQUIERA puede LEER los proyectos (para tu portafolio público)
       allow read: if true;
-
-      // SOLO los usuarios autenticados (tú) pueden CREAR, ACTUALIZAR o BORRAR.
       allow write: if request.auth != null;
     }
 
-    // Regla de seguridad para el resto de la base de datos
-    match /{document=**} {
-      // Negar el acceso a cualquier otra colección que no hayamos definido.
-      allow read, write: if false;
+    // REGLA 2: Para la colección "testimonios"
+    match /testimonios/{testimonioId} {
+      allow create: if true;
+      allow read, update, delete: if request.auth != null;
     }
+    
+    // REGLA 3: Una regla general para todo lo demás (debe ir al final)
+    // ATENCIÓN: Esta regla NO debe estar aquí. La lógica de "negar todo lo demás"
+    // está implícita. Si no se define una regla para una colección, se niega por defecto.
+    // La eliminaremos para evitar conflictos.
+
   }
 }

@@ -884,3 +884,54 @@ ESTILOS ESPECÍFICOS DEL DASHBOARD (MODAL MEJORADO)
     font-size: 0.75rem;
     font-weight: 600;
 }
+
+/* --- ESTILOS PARA FORMULARIO DE TESTIMONIOS Y ESTRELLAS --- */
+
+/* Etiqueta estática para la calificación */
+.form-label--static {
+    display: block;
+    color: #999;
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+}
+
+/* Contenedor principal de las estrellas */
+.star-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    /* ¡La clave del efecto! */
+    justify-content: flex-end;
+    margin-bottom: 1.5rem;
+}
+
+/* Ocultamos los botones de radio originales */
+.star-rating input[type="radio"] {
+    display: none;
+}
+
+/* Estilo de las estrellas (las etiquetas que reemplazan a los inputs) */
+.star-rating label {
+    font-size: 2.5rem;
+    /* Tamaño de las estrellas */
+    color: #ccc;
+    /* Color de estrella inactiva */
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+/* El ícono de la estrella se inserta aquí */
+.star-rating label:before {
+    content: '★';
+}
+
+/* Efecto hover: colorea la estrella bajo el cursor y todas las anteriores */
+.star-rating:not(:hover) input[type="radio"]:checked~label,
+.star-rating:hover input[type="radio"]:hover~label {
+    color: #ffc107;
+    /* Color dorado para la estrella activa/hover */
+}
+
+/* Colorea la estrella seleccionada permanentemente */
+.star-rating input[type="radio"]:checked+label {
+    color: #ffc107;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deja tu Testimonio - Emmanuel Contreras</title>
+    <meta name="description"
+        content="¿Satisfecho con el trabajo? Comparte tu experiencia y ayuda a otros a tomar la mejor decisión. ¡Tu opinión es muy valiosa!">
+    <meta name="robots" content="noindex, nofollow">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div id="header-placeholder"></div>
+    <main>
+        <section class="page-section">
+            <div class="container" style="max-width: 700px;">
+                <div class="text-center mb-12">
+                    <h1 class="hero-interior__title">Comparte tu Experiencia</h1>
+                    <p class="text-lg mt-4">Tu opinión es fundamental para mí y una gran ayuda para futuros clientes.
+                        ¡Gracias por tomarte un momento para dejar tu testimonio!</p>
+                </div>
+
+                <div class="contact-form">
+                    <form id="testimonial-form">
+                        <div class="form-group">
+                            <label class="form-label--static">Tu Calificación:</label>
+                            <div class="star-rating">
+                                <input type="radio" id="star5" name="rating" value="5" required /><label for="star5"
+                                    title="5 estrellas"></label>
+                                <input type="radio" id="star4" name="rating" value="4" /><label for="star4"
+                                    title="4 estrellas"></label>
+                                <input type="radio" id="star3" name="rating" value="3" /><label for="star3"
+                                    title="3 estrellas"></label>
+                                <input type="radio" id="star2" name="rating" value="2" /><label for="star2"
+                                    title="2 estrellas"></label>
+                                <input type="radio" id="star1" name="rating" value="1" /><label for="star1"
+                                    title="1 estrella"></label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" id="nombreCliente" name="nombreCliente" class="form-input"
+                                placeholder=" " required>
+                            <label for="nombreCliente" class="form-label">Tu Nombre Completo</label>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea id="textoTestimonio" name="textoTestimonio" class="form-input" placeholder=" "
+                                rows="5" required></textarea>
+                            <label for="textoTestimonio" class="form-label">Tu testimonio</label>
+                        </div>
+
+                        <button type="submit" class="button button--primary w-full">Enviar mi Testimonio</button>
+                    </form>
+                    <p id="form-message" class="text-center mt-4"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script src="/assets/js/main.js"></script>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+        const firebaseConfig = {
+            apiKey: "AIzaSyC_3qYKEMcU9mxeUyqX0xxQ_YTKCPypxHc",
+            authDomain: "arquitecto-digital.firebaseapp.com",
+            projectId: "arquitecto-digital",
+            storageBucket: "arquitecto-digital.firebasestorage.app",
+            messagingSenderId: "751037572723",
+            appId: "1:751037572723:web:43cb5487f586a84e25ac06",
+            measurementId: "G-BHNFB20WZ4"
+        };
+        const app = initializeApp(firebaseConfig);
+    </script>
+    <script type="module" src="/assets/js/app-testimonios.js"></script>
+</body>
+
+</html>
