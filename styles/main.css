@@ -1,0 +1,28 @@
+/* ================================================================
+    WEBFACTORY CSS BLUEPRINT
+    Este archivo importa todos los parciales modulares.
+================================================================ */
+
+/* 1. Abstracts (Variables, etc.) */
+@import 'abstracts/_variables.css';
+
+/* 2. Base (Body, Tipografía base) */
+@import 'base/_base.css';
+@import 'base/_typography.css';
+
+/* 3. Components (Bloques reutilizables) */
+@import 'components/_buttons.css';
+@import 'components/_cards.css';
+@import 'components/_forms.css';
+@import 'components/_modal.css';
+@import 'components/_tags.css';
+@import 'components/_tables.css';
+
+/* 4. Layout (Estructura principal) */
+@import 'layout/_navigation.css';
+@import 'layout/_grid.css';
+
+/* 5. Pages (Estilos específicos de cada página) */
+@import 'pages/_home.css';
+@import 'pages/_case-study.css';
+@import 'pages/_contact.css';

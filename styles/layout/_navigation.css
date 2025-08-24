@@ -1,0 +1,97 @@
+.nav-link {
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-link:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--accent-cyan);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--accent-cyan);
+}
+
+.nav-link.active:after {
+    width: 100%;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    cursor: pointer;
+}
+
+.logo-svg {
+    width: 50px;
+    height: auto;
+}
+
+/* --- Estilos para Menú Desplegable (Dropdown) --- */
+
+/* Muestra el menú al pasar el mouse sobre el contenedor */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Estilo de cada elemento del menú desplegable */
+.dropdown-item {
+    display: block;
+    padding: 0.75rem 1.5rem;
+    color: var(--white-color);
+    transition: background-color 0.2s, color 0.2s;
+    white-space: nowrap;
+    /* Evita que el texto se parta en dos líneas */
+}
+
+/* Efecto hover para los elementos */
+.dropdown-item:hover {
+    background-color: var(--accent-cyan);
+    color: var(--primary-dark);
+}
+
+/* --- Estilos para Header Fijo y Estado Activo --- */
+
+/* 1. Modifica el selector 'header' existente o añade este bloque */
+header {
+    /* Las propiedades que ya tienes... */
+    background-color: var(--primary-dark);
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+    /* Propiedades clave para el efecto fijo */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    /* Asegura que esté por encima de todo */
+}
+
+/* 2. Ajuste para el contenido principal (Ya lo tienes bien en _base.css) */
+/* Este código en styles/base/_base.css es correcto y necesario */
+main {
+    padding-top: 88px;
+    /* Evita que el contenido se oculte detrás del header fijo */
+}
+
+/* 3. Estilo para el enlace de la sección activa (si decides implementarlo) */
+.nav-link.active {
+    color: var(--accent-cyan);
+    /* Usa tu color de acento */
+}
+
+/* Opcional: si quieres el subrayado que te sugerí */
+.nav-link.active:after {
+    width: 100%;
+}

@@ -8,39 +8,59 @@
                 <div class="text-xs font-light tracking-wider opacity-80">ARQUITECTO DIGITAL</div>
             </div>
         </a>
-        <div class="md:hidden">
-            <button id="menu-toggle" class="text-white focus:outline-none" aria-controls="mobile-menu"
-                aria-expanded="false">
-                <span class="sr-only">Abrir menú</span>
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+        <div class="flex items-center">
+            <nav class="hidden md:flex items-center space-x-6">
+                <a href="/servicios.html" class="nav-link">Servicios</a>
+                <a href="/caso-de-exito.html" class="nav-link">Casos de Éxito</a>
+                <div class="relative dropdown">
+                    <button class="nav-link flex items-center" aria-haspopup="true">
+                        Más
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div class="dropdown-menu absolute hidden bg-primary-dark shadow-xl rounded-md mt-2 py-2 w-48">
+                        <a href="/proceso.html" class="dropdown-item">Mi Proceso</a>
+                        <a href="/sobre-mi.html" class="dropdown-item">Sobre Mí</a>
+                        <a href="/blog.html" class="dropdown-item">Blog</a>
+                        <a href="/dejar-testimonios.html" class="dropdown-item">Dejar Testimonio</a>
+                    </div>
+                </div>
+            </nav>
+            <div class="hidden md:flex items-center space-x-4 ml-6">
+                <a href="/contacto.html" class="button button--secondary" style="padding: 0.6rem 1.5rem;">Contacto</a>
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z">
                     </path>
                 </svg>
-            </button>
+                </a>
+            </div>
+            <div class="md:hidden ml-4">
+                <button id="menu-toggle" class="text-white focus:outline-none" aria-controls="mobile-menu"
+                    aria-expanded="false">
+                    <span class="sr-only">Abrir menú</span>
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
         </div>
-        <nav class="hidden md:block">
-            <ul id="desktop-nav" class="flex items-center space-x-8">
-                <li><a href="/proceso.html" class="nav-link">Proceso</a></li>
-                <li><a href="/servicios.html" class="nav-link">Servicios</a></li>
-                <li><a href="/caso-de-exito.html" class="nav-link">Casos de Éxito</a></li>
-                <li><a href="/blog.html" class="nav-link">Blog</a></li>
-                <li><a href="/reseñas.html" class="nav-link">Reseñas</a></li>
-                <li><a href="/sobre-mi.html" class="nav-link">Sobre Mí</a></li>
-                <li><a href="/contacto.html" class="nav-link">Contacto</a></li>
-            </ul>
-        </nav>
     </div>
     <div id="mobile-menu" class="hidden md:hidden">
         <nav class="px-6 pt-2 pb-4">
-            <ul class="flex flex-col space-y-4">
-                <li><a href="/proceso.html" class="nav-link text-center block">Proceso</a></li>
-                <li><a href="/servicios.html" class="nav-link text-center block">Servicios</a></li>
-                <li><a href="/caso-de-exito.html" class="nav-link text-center block">Casos de Éxito</a></li>
-                <li><a href="/blog.html" class="nav-link text-center block">Blog</a></li>
-                <li><a href="/reseñas.html" class="nav-link text-center block">Reseñas</a></li>
-                <li><a href="/sobre-mi.html" class="nav-link text-center block">Sobre Mí</a></li>
-                <li><a href="/contacto.html" class="nav-link text-center block">Contacto</a></li>
+            <ul class="flex flex-col space-y-2">
+                <li><a href="/servicios.html" class="nav-link text-center block py-2">Servicios</a></li>
+                <li><a href="/caso-de-exito.html" class="nav-link text-center block py-2">Casos de Éxito</a></li>
+                <li><a href="/proceso.html" class="nav-link text-center block py-2">Mi Proceso</a></li>
+                <li><a href="/sobre-mi.html" class="nav-link text-center block py-2">Sobre Mí</a></li>
+                <li><a href="/blog.html" class="nav-link text-center block py-2">Blog</a></li>
+                <li><a href="/dejar-testimonios.html" class="nav-link text-center block py-2">Dejar Testimonio</a></li>
+                <li class="border-t border-gray-700 pt-4 mt-2 flex justify-center gap-4">
+                    <a href="/contacto.html" class="button button--secondary w-full">Contacto</a>
+                </li>
             </ul>
         </nav>
     </div>

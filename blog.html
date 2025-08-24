@@ -7,7 +7,6 @@
     <title>Blog - Emmanuel Contreras, Arquitecto Digital</title>
     <meta name="description"
         content="Artículos sobre estrategia digital, desarrollo web y tecnología para ayudar a los negocios a construir activos digitales que generan resultados.">
-    <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
             w[l] = w[l] || []; w[l].push({
                 'gtm.start':
@@ -16,19 +15,16 @@
                 j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
                     'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-NNJ8BG7H');</script>
-    <!-- End Google Tag Manager -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/styles/main.css">
 </head>
 
 <body>
-    <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NNJ8BG7H" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
     <div id="header-placeholder"></div>
     <main>
         <section class="hero-interior">
@@ -39,31 +35,7 @@
 
         <section class="page-section">
             <div class="container">
-                <div class="portfolio-grid">
-
-                    <article class="portfolio-card">
-                        <div class="portfolio-card__content">
-                            <span class="portfolio-card__tag">Arquitectura Web</span>
-                            <h2 class="portfolio-card__title">Más Allá del Diseño Bonito: Los 5 Pilares de una Web que
-                                SÍ Genera Negocio</h2>
-                            <p class="portfolio-card__description">Descubre los elementos clave que separan a un simple
-                                "sitio bonito" de un verdadero motor de crecimiento para tu negocio.</p>
-                            <a href="/blog/5-pilares-web-de-negocio.html" class="button button--primary mt-4">Leer
-                                Artículo</a>
-                        </div>
-                    </article>
-
-                    <article class="portfolio-card">
-                        <div class="portfolio-card__content">
-                            <span class="portfolio-card__tag">Estrategia de Negocio</span>
-                            <h2 class="portfolio-card__title">La Trampa de la Web 'Económica'</h2>
-                            <p class="portfolio-card__description">Por qué un sitio de $5,000 MXN puede ser la inversión
-                                más cara que hagas. Descubre los 4 costos ocultos.</p>
-                            <a href="/blog/trampa-web-economica.html" class="button button--primary mt-4">Leer
-                                Artículo</a>
-                        </div>
-                    </article>
-
+                <div id="blog-posts-container" class="portfolio-grid">
                 </div>
             </div>
         </section>
@@ -71,6 +43,22 @@
 
     <div id="footer-placeholder"></div>
     <script src="/assets/js/main.js"></script>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+        const firebaseConfig = {
+            apiKey: "AIzaSyC_3qYKEMcU9mxeUyqX0xxQ_YTKCPypxHc",
+            authDomain: "arquitecto-digital.firebaseapp.com",
+            projectId: "arquitecto-digital",
+            storageBucket: "arquitecto-digital.firebasestorage.app",
+            messagingSenderId: "751037572723",
+            appId: "1:751037572723:web:43cb5487f586a84e25ac06",
+            measurementId: "G-BHNFB20WZ4"
+        };
+        const app = initializeApp(firebaseConfig);
+    </script>
+
+    <script type="module" src="/assets/js/app-blog.js"></script>
 </body>
 
 </html>
